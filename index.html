@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bootstrap Components Demo</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-5">
+
+
+
+
+  <h1>Bootstrap Components</h1>
+
+  <ul>
+    <li><a href="#icons">Icons</a></li>
+    <li><a href="#carousel">Carousel</a></li>
+    <li><a href="#accordion">Accordion</a></li>
+    <li><a href="#tooltips">Tooltips</a></li>
+    <li><a href="#modal">Modal</a></li>
+    <li><a href="#navbar">Navbar</a></li>
+    <li><a href="#custom-slider">Custom Slider</a></li>
+    <li><a href="#alerts">Alerts</a></li>
+    <li><a href="#card">Card</a></li>
+    <li><a href="#collapse">Collapse</a></li>
+    <li><a href="#dropdown">Dropdown</a></li>
+    <li><a href="#spinner">Spinner</a></li>
+    <li><a href="#toast">Toast</a></li>
+  </ul>
+
+  <hr>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Icons (Font Awesome) -->
+  <h2 id="icons">Icons</h2>
+  <p>Example: <i class="bi bi-alarm"></i> Bootstrap uses Bootstrap Icons or Font Awesome.<div class="container">
+    <i class="bi bi-watch"></i>
+  </div>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-watch" viewBox="0 0 16 16">
+  <path d="M8.5 5a.5.5 0 0 0-1 0v2.5H6a.5.5 0 0 0 0 1h2a.5.5 0 0 0 .5-.5z"/>
+  <path d="M5.667 16C4.747 16 4 15.254 4 14.333v-1.86A6 6 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86a6 6 0 0 1 1.918 3.48.502.502 0 0 1 .582.493v1a.5.5 0 0 1-.582.493A6 6 0 0 1 12 12.473v1.86c0 .92-.746 1.667-1.667 1.667zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0"/>
+</svg></p>
+
+
+
+
+
+
+
+
+
+
+  <!-- Carousel -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carousel with Local Image</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-5">
+
+  <h2>Carousel (Local Image) ✅</h2>
+
+  <!-- Carousel -->
+  <div id="myCarousel" class="carousel slide w-50" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="html.jpg" class="d-block w-500" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="koreancity.jpg" class="d-block w-500" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="html.jpg" class="d-block w-500" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+  <!-- Accordion -->
+  <h2 id="accordion">Accordion</h2>
+  <div class="accordion w-50" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">This is the first item's content.</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Tooltips -->
+  <h2 id="tooltips">Tooltips</h2>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+    Hover me
+  </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Modal -->
+  <h2 id="modal">Modal</h2>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch Modal
+  </button>
+  <div class="modal fade" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          This is a Bootstrap modal.
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+
+
+
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+  <!-- Custom Slider -->
+  <h2 id="custom-slider">Custom Slider</h2>
+  <input type="range" class="form-range" min="0" max="100">
+
+  <!-- Alerts -->
+  <h2 id="alerts">Alerts</h2>
+  <div class="alert alert-warning" role="alert">
+    This is a warning alert!
+  </div>
+
+
+
+
+
+
+
+
+  <!-- Card -->
+  <h2 id="card">Card</h2>
+  <div class="card w-50">
+    <div class="card-body">
+      <h5 class="card-title">Card Title</h5>
+      <p class="card-text">Some quick example text.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Collapse -->
+  <h2 id="collapse">Collapse</h2>
+  <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+    Toggle Content
+  </button>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      This content is collapsible.
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Dropdown -->
+  <h2 id="dropdown">Dropdown</h2>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+    </ul>
+  </div>
+
+
+
+
+
+
+  <!-- Spinner -->
+  <h2 id="spinner">Spinner</h2>
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Toast -->
+  <h2 id="toast">Toast</h2>
+  <button class="btn btn-primary" id="liveToastBtn">Show Toast</button>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert">
+      <div class="toast-header">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>Now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">
+        Hello, this is a toast!
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Initialize Tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+
+
+    // Initialize Toast
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', () => {
+        const toast = new bootstrap.Toast(toastLiveExample)
+        toast.show()
+      })
+    }
+
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
